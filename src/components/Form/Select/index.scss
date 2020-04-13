@@ -1,0 +1,15 @@
+.formInputContainer{
+  @include flex-column(flex-start, flex-start);
+
+  label{
+    margin-bottom: 5px;
+  }
+
+  .select{
+    padding: 7px 13px;
+    background-color: $white_color;
+    border-radius: 4px;
+    border: 2px solid $border_color;
+    width: 150px;
+  }
+}

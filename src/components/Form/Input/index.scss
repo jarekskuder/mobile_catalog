@@ -1,0 +1,25 @@
+.formInputContainer{
+  @include flex-column(flex-start, flex-start);
+
+  label{
+    margin-bottom: 5px;
+  }
+
+  input{
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 2px solid $border_color;
+    width: 150px;
+    border-radius: 4px;
+  }
+
+  .brandNameInput{
+    margin: 25px 0;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+  }
+}

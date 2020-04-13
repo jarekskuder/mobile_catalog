@@ -1,0 +1,37 @@
+.modalOverlay{
+  @include flex-column(center, center);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+
+  .modalBody{
+    @include flex-column(center, center);
+    position: relative;
+    background-color: $white_color;
+    border-radius: 6px;
+    width: 450px;
+    height: 280px;
+    padding: 25px 20px;
+    cursor: default;
+
+    .closeButton{
+      &:after{
+        display: inline-block;
+        content: "\00d7";
+        position: absolute;
+        font-weight: bold;
+        font-size: 24px;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.regButton{
+  border: 2px solid $hover_color;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  padding: 10px 20px;
+  background-color: $white_color;
+  color: $black_color;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $hover_color;
+  }
+}

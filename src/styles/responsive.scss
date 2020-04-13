@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px) {
+  .container{
+    .functionHeader{
+      padding: 0;
+      @include flex-row(center, flex-end);
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .container{
+    .functionHeader{
+      padding: 0;
+      @include flex-column(center, center);
+      height: auto;
+
+      .formInputContainer{
+        margin-top: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.containerItem{
+  @include flex-column-center-item-padding(25px);
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+
+  &.brand{
+    transition: 0.3s;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &.phone{
+    transition: transform .2s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+
+  .itemName{
+    margin-top: 10px;
+    color: $black_color;
+  }
+}

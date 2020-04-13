@@ -1,0 +1,26 @@
+@mixin flex-row-space_around {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+}
+
+@mixin flex-row($justify-content: center, $align-item: center){
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
+
+@mixin flex-column($justify-content: center, $align-item: center){
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
+
+@mixin flex-column-center-item-padding($padding: 25px 25px 40px) {
+  @include flex-column(center, center);
+  padding: $padding;
+}
